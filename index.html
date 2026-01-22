@@ -3,185 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UN Global Compact Türkiye | SEO & AI Stratejisi</title>
+    <title>SEO & AI Stratejisi | UN Global Compact Türkiye</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7fa; scroll-behavior: smooth; }
         
-        /* Sidebar Sabitleme */
+        /* Sol Menü */
         @media (min-width: 1024px) {
-            .sidebar { position: fixed; height: 100vh; width: 320px; }
-            .content { margin-left: 320px; }
+            .sidebar { position: fixed; height: 100vh; width: 300px; }
+            .content { margin-left: 300px; }
         }
 
-        .nav-link { display: flex; align-items: center; padding: 10px 20px; color: #475569; border-radius: 8px; transition: all 0.2s; margin-bottom: 4px; }
-        .nav-link:hover { background-color: #f8fafc; color: #0072bc; }
-        .nav-link.active { background-color: #e0f2fe; color: #0072bc; font-weight: 700; }
+        .nav-link { display: flex; align-items: center; padding: 12px 20px; color: #64748b; border-radius: 12px; transition: all 0.3s; margin-bottom: 4px; font-size: 0.9rem; }
+        .nav-link:hover { background-color: #f1f5f9; color: #0072bc; }
+        .nav-link.active { background-color: #e0f2fe; color: #0072bc; font-weight: 700; shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
         
-        /* Floating Card Yapısı */
+        /* Yüzen Kartlar (Floating Cards) */
         .floating-card { 
             background: white; 
             border-radius: 24px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
-            padding: 40px; 
-            margin-bottom: 40px; 
-            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04); 
+            padding: 3rem; 
+            margin-bottom: 3rem; 
+            border: 1px solid rgba(226, 232, 240, 0.7);
         }
 
-        .h-tag { background: #0072bc; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-right: 8px; }
-        .accent-line { border-left: 6px solid #0072bc; padding-left: 20px; }
+        .h-tag { background: #0072bc; color: white; padding: 2px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; margin-right: 10px; display: inline-block; }
+        .accent-border { border-left: 8px solid #0072bc; }
+        .gradient-text { background: linear-gradient(135deg, #0072bc 0%, #004a80 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body class="text-slate-800">
 
-    <aside class="sidebar bg-white border-r border-slate-200 flex flex-col">
-        <div class="p-8 border-b border-slate-100">
-            <h1 class="text-xl font-black text-slate-900 leading-tight">UN Global Compact <span class="text-[#0072bc]">SEO & AI</span></h1>
+    <aside class="sidebar bg-white border-r border-slate-200 flex flex-col p-6 shadow-sm">
+        <div class="mb-10 px-4">
+            <h1 class="text-xl font-black tracking-tighter text-slate-900 leading-none">UN Global Compact<br><span class="text-[#0072bc] text-2xl uppercase">Türkiye</span></h1>
         </div>
 
-        <nav class="flex-1 overflow-y-auto p-6">
-            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Stratejik Giriş</div>
-            <a href="#tanim" class="nav-link active"><i class="fas fa-info-circle mr-3"></i> SEO Nedir?</a>
-            <a href="#bilesenler" class="nav-link"><i class="fas fa-list-check mr-3"></i> Temel Bileşenler</a>
+        <nav class="flex-1 space-y-8 overflow-y-auto pr-2">
+            <div>
+                <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-4 block mb-4">Stratejik Temel</span>
+                <a href="#giris" class="nav-link active"><i class="fas fa-compass mr-3"></i> SEO Nedir?</a>
+                <a href="#bilesenler" class="nav-link"><i class="fas fa-layer-group mr-3"></i> Bileşenler</a>
+            </div>
             
-            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-8 mb-4">İçerik Standartları</div>
-            <a href="#ozgunluk" class="nav-link"><i class="fas fa-certificate mr-3"></i> Özgünlük</a>
-            <a href="#analiz" class="nav-link"><i class="fas fa-magnifying-glass mr-3"></i> Kelime Analizi</a>
-            <a href="#baslik" class="nav-link"><i class="fas fa-heading mr-3"></i> Başlık Seçimi</a>
-            <a href="#akıs" class="nav-link"><i class="fas fa-sitemap mr-3"></i> İçerik Akışı</a>
+            <div>
+                <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-4 block mb-4">Uygulama Rehberi</span>
+                <a href="#ozgunluk" class="nav-link"><i class="fas fa-shield-check mr-3"></i> Özgünlük</a>
+                <a href="#analiz" class="nav-link"><i class="fas fa-magnifying-glass mr-3"></i> Kelime Analizi</a>
+                <a href="#baslik" class="nav-link"><i class="fas fa-pen-nib mr-3"></i> Başlık Seçimi</a>
+                <a href="#akıs" class="nav-link"><i class="fas fa-sitemap mr-3"></i> İçerik Akışı</a>
+            </div>
 
-            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-8 mb-4">Teknik Sinyaller</div>
-            <a href="#linkleme" class="nav-link"><i class="fas fa-link mr-3"></i> İç Linkleme</a>
-            <a href="#bullet" class="nav-link"><i class="fas fa-list-ul mr-3"></i> Liste Yapıları</a>
-            <a href="#eeat" class="nav-link"><i class="fas fa-user-pen mr-3"></i> Yazar (EEAT)</a>
-            <a href="#ai" class="nav-link"><i class="fas fa-robot mr-3"></i> AI Görünürlüğü</a>
+            <div>
+                <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-4 block mb-4">AI & Güven</span>
+                <a href="#linkleme" class="nav-link"><i class="fas fa-link mr-3"></i> İç Linkleme</a>
+                <a href="#ai" class="nav-link"><i class="fas fa-robot mr-3"></i> AI Görünürlüğü</a>
+            </div>
         </nav>
 
-        <div class="p-8 border-t border-slate-100 text-[10px] font-bold text-slate-400 uppercase">
-            UN Global Compact Türkiye <br> <span class="text-slate-900 italic tracking-widest">Digital Hub 2026</span>
+        <div class="mt-auto p-4 border-t border-slate-100 italic text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-loose">
+            Yazarlar İçin Sunum Taslağı<br>
+            <span class="text-slate-700">Digital Strategy 2026</span>
         </div>
     </aside>
 
-    <main class="content p-6 lg:p-16 max-w-5xl">
+    <main class="content p-8 lg:p-20 max-w-6xl">
         
-        <div class="floating-card accent-line italic text-lg text-slate-600 bg-white/50">
-            "Amacı anahtar kelime doldurmak değil; doğru kişiye, doğru sorunun cevabını, doğru yapı ve doğru bağlam ile sunabilmektir."
+        <div class="floating-card accent-border bg-gradient-to-r from-blue-50/50 to-white">
+            <h2 id="giris" class="text-4xl font-extrabold mb-8 gradient-text">SEO Uyumlu İçerik Nedir?</h2>
+            <div class="space-y-6 text-xl leading-relaxed text-slate-600">
+                <p>Okuyucuya <strong class="text-slate-900 font-extrabold underline decoration-blue-200 decoration-4">gerçek değer sunan</strong> ve arama motorlarının kolayca anlayıp doğru bağlama yerleştirebildiği içerik türüdür.</p>
+                <p class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm italic text-lg">"Amaç anahtar kelime doldurmak değil; doğru kişiye, doğru sorunun cevabını, doğru yapı ve doğru bağlam ile sunabilmektir."</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mt-10">
+                    <div class="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-sm border border-slate-50">
+                        <i class="fas fa-users text-blue-500 mt-1"></i>
+                        <p class="text-sm"><strong>Doğru Kitle:</strong> İş dünyası, akademi, STK ekosistemi ve profesyoneller.</p>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-sm border border-slate-50">
+                        <i class="fas fa-star text-blue-500 mt-1"></i>
+                        <p class="text-sm"><strong>Kurumsal Güven:</strong> Görünürlük, güvenilirlik ve otorite algısını güçlendirme.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <section id="tanim" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-6 tracking-tight">SEO Uyumlu İçerik Nedir?</h2>
-            <p class="text-xl leading-relaxed mb-8">Okuyucuya gerçek değer sunan ve arama motorlarının kolayca anlayıp doğru bağlama yerleştirebildiği içeriktir. UNGC Türkiye için doğru kitleye ulaşmayı, nitelikli trafik kazanmayı ve otorite algısını güçlendirmeyi sağlar.</p>
+        <h2 id="bilesenler" class="text-2xl font-extrabold text-slate-400 uppercase tracking-widest mb-8 px-4">Temel Bileşenler</h2>
+        <div class="floating-card grid md:grid-cols-2 gap-10">
+            <ul class="space-y-6 text-lg">
+                <li class="flex items-center gap-4"><i class="fas fa-key text-blue-500"></i> Anahtar kelime stratejisi</li>
+                <li class="flex items-center gap-4"><i class="fas fa-stream text-blue-500"></i> İçerik akışı ve yapı</li>
+                <li class="flex items-center gap-4"><i class="fas fa-heading text-blue-500"></i> Başlık hiyerarşisi (H1-H3)</li>
+            </ul>
+            <ul class="space-y-6 text-lg">
+                <li class="flex items-center gap-4"><i class="fas fa-link text-blue-500"></i> İç linkleme yapısı</li>
+                <li class="flex items-center gap-4"><i class="fas fa-bolt text-blue-500"></i> Özgünlük ve Okunabilirlik</li>
+                <li class="flex items-center gap-4"><i class="fas fa-image text-blue-500"></i> Görsel/Video optimizasyonu</li>
+            </ul>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <section id="ozgunluk" class="floating-card border-t-8 border-red-500">
+                <h3 class="text-2xl font-extrabold text-red-600 mb-6 italic italic uppercase">Özgünlük</h3>
+                <p class="text-slate-600 leading-relaxed italic">Kopyalanan içerikler spam sinyali üretir ve sıralama kaybına neden olur. UNGC Türkiye için özgünlük, küresel ilkeleri yerel bağlamda yorumlamaktır.</p>
+            </section>
             
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 bg-blue-50 rounded-xl border border-blue-100">
-                    <h4 class="font-bold text-[#0072bc] text-sm uppercase mb-2">Odak Alanlar</h4>
-                    <p class="text-xs">Sürdürülebilirlik, insan hakları, iklim krizi, kurumsal sorumluluk, çalışma standartları.</p>
-                </div>
-                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-700 text-sm uppercase mb-2">Temel Hedef</h4>
-                    <p class="text-xs">Google'da sürdürülebilir görünürlük elde ederek kullanıcıyı rehber ve kaynak sayfalara yönlendirmek.</p>
-                </div>
-            </div>
-        </section>
+            <section id="analiz" class="floating-card border-t-8 border-slate-800">
+                <h3 class="text-2xl font-extrabold text-slate-800 mb-6 italic italic uppercase text-sm">Analiz Gücü</h3>
+                <p class="text-slate-600 leading-relaxed italic">Kullanıcıların hangi soruları sorduğunu anlamak, içeriğin görünürlüğünü ve erişimini genişletir.</p>
+            </section>
+        </div>
 
-        <section id="bilesenler" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight">Temel Bileşenler</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-                <div class="flex items-center p-3 bg-slate-50 rounded-lg"><i class="fas fa-check text-green-500 mr-3"></i> Anahtar kelime stratejisi</div>
-                <div class="flex items-center p-3 bg-slate-50 rounded-lg"><i class="fas fa-check text-green-500 mr-3"></i> İçerik akışı ve yapı</div>
-                <div class="flex items-center p-3 bg-slate-50 rounded-lg"><i class="fas fa-check text-green-500 mr-3"></i> Başlık hiyerarşisi (H1-H2-H3)</div>
-                <div class="flex items-center p-3 bg-slate-50 rounded-lg"><i class="fas fa-check text-green-500 mr-3"></i> İç linkleme ve Görsel/Video optimizasyonu</div>
-                <div class="flex items-center p-3 bg-slate-50 rounded-lg"><i class="fas fa-check text-green-500 mr-3"></i> Özgünlük ve Okunabilirlik</div>
-            </div>
-        </section>
-
-        <section id="ozgunluk" class="floating-card border-t-8 border-red-500">
-            <h2 class="text-3xl font-extrabold text-red-600 mb-6 tracking-tight italic">Özgün İçerik Üretimi</h2>
-            <p class="mb-6 opacity-80 italic">Kopya içerikler spam sinyali üretir ve sıralama kaybına neden olur. Özgünlük, kurumun bakış açısını yansıtmak ve küresel ilkeleri yerel bağlamda yorumlamaktır.</p>
-        </section>
-
-        <section id="analiz" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight underline decoration-[#0072bc] decoration-4">Stratejik Başlık Seçimi</h2>
-            <div class="space-y-6">
-                <div class="bg-slate-50 p-6 rounded-2xl">
-                    <div class="text-xs font-bold text-red-400 uppercase mb-2 italic">Zayıf Başlık Örneği</div>
-                    <p class="text-slate-400 line-through">Sürdürülebilir Kalkınma Amaçları Hakkında Bilgiler</p>
+        <section id="baslik" class="floating-card">
+            <h3 class="text-2xl font-extrabold mb-10 text-slate-900 border-b pb-4">Doğru Başlık Seçimi</h3>
+            <div class="space-y-8">
+                <div class="bg-slate-50 p-8 rounded-3xl opacity-50 border border-dashed border-slate-300">
+                    <span class="text-xs font-bold uppercase text-red-400 block mb-2 italic">Zayıf Başlık</span>
+                    <p class="text-xl">"Sürdürülebilir Kalkınma Amaçları Hakkında Bilgiler"</p>
                 </div>
-                <div class="bg-blue-50 p-6 rounded-2xl border-2 border-blue-200 shadow-sm">
-                    <div class="text-xs font-bold text-[#0072bc] uppercase mb-2">Güçlü Başlık Örneği</div>
-                    <p class="text-xl font-bold text-slate-900 italic">Sürdürülebilir Kalkınma Amaçları (SKA) Nedir? Şirketler İçin Uygulama Rehberi</p>
+                <div class="bg-[#0072bc]/5 p-8 rounded-3xl border border-[#0072bc]/20 shadow-sm">
+                    <span class="text-xs font-bold uppercase text-[#0072bc] block mb-2 italic">Güçlü Başlık</span>
+                    <p class="text-2xl font-black text-slate-900 leading-tight italic">"Sürdürülebilir Kalkınma Amaçları (SKA) Nedir? Şirketler İçin Uygulama Rehberi"</p>
                 </div>
             </div>
         </section>
 
         <section id="akıs" class="floating-card bg-slate-900 text-slate-300">
-            <h2 class="text-3xl font-extrabold text-white mb-8 tracking-tight">Hiyerarşi Taslağı (H1-H2-H3)</h2>
-            <div class="font-mono text-sm border-l-2 border-slate-700 pl-6 space-y-4">
-                <div><span class="h-tag">H1</span> Sürdürülebilir Kalkınma Amaçları Nedir?</div>
-                <div class="pl-8 space-y-4">
-                    <div><span class="h-tag bg-slate-700 text-white">H2</span> SKA Neyi Kapsar?</div>
-                    <div class="pl-8 space-y-2 opacity-60 italic text-xs">
-                        <div><span class="h-tag bg-slate-800 text-white italic">H3</span> SKA'nın ortaya çıkış amacı</div>
-                        <div><span class="h-tag bg-slate-800 text-white italic">H3</span> 2030 Ajandası nedir?</div>
+            <h3 class="text-2xl font-extrabold text-white mb-10">İçerik Akışı (H1-H2-H3)</h3>
+            <div class="font-mono text-sm leading-loose border-l border-slate-700 pl-8 space-y-6">
+                <div><span class="h-tag bg-[#0072bc]">H1</span> SKA Nedir?</div>
+                <div class="pl-8 border-l border-slate-800 space-y-6">
+                    <div><span class="h-tag bg-slate-700">H2</span> SKA Neyi Kapsar?</div>
+                    <div class="pl-12 opacity-50 italic space-y-2 text-xs">
+                        <div><span class="h-tag bg-slate-800">H3</span> SKA'nın ortaya çıkış amacı</div>
+                        <div><span class="h-tag bg-slate-800">H3</span> 2030 Ajandası nedir?</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="linkleme" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 italic">Linkleme & Listeler</h2>
-            <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                    <div class="bg-blue-100 p-3 rounded-full text-[#0072bc]"><i class="fas fa-link"></i></div>
-                    <div>
-                        <h4 class="font-bold">İç Linkleme</h4>
-                        <p class="text-sm opacity-70 italic">"Buraya tıklayın" yerine anlam taşıyan metinler kullanılmalıdır (Örn: 10 İlke, SKA).</p>
-                    </div>
-                </div>
-                <div id="bullet" class="flex items-start gap-4">
-                    <div class="bg-green-100 p-3 rounded-full text-green-600"><i class="fas fa-list-check"></i></div>
-                    <div>
-                        <h4 class="font-bold">Liste Yapıları</h4>
-                        <p class="text-sm opacity-70 italic">Adım adım rehberler ve kontrol listeleri Featured Snippet şansını artırır.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="grid md:grid-cols-2 gap-8">
+            <section id="linkleme" class="floating-card border-b-8 border-blue-100">
+                <h3 class="text-2xl font-extrabold mb-6 italic underline decoration-[#0072bc]">İç Linkleme</h3>
+                <p class="text-slate-600 text-sm italic">"Buraya tıklayın" yerine <strong>"Sosyal Sürdürülebilirlik"</strong> gibi anlamlı metinler kullanın.</p>
+            </section>
+            <section class="floating-card border-b-8 border-green-100">
+                <h3 class="text-2xl font-extrabold mb-6 italic underline decoration-green-500">Bullet List</h3>
+                <p class="text-slate-600 text-sm italic">Süreç anlatımları ve kontrol listeleri taranabilirliği ve Featured Snippet şansını artırır.</p>
+            </section>
+        </div>
 
-        <section id="eeat" class="floating-card bg-white border-t-8 border-[#0072bc]">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight italic">AI Görünürlüğü & EEAT</h2>
-            <div class="space-y-8">
-                <div class="p-6 bg-slate-50 rounded-2xl italic border-l-4 border-slate-300">
-                    <p class="text-lg leading-relaxed italic">"ChatGPT ve Gemini gibi sistemler rehber formatındaki metinleri tarar ve referans gösterir."</p>
-                </div>
-                <div id="ai" class="grid md:grid-cols-2 gap-8 text-sm">
-                    <div>
-                        <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#0072bc]">Yazar Etkisi</h4>
-                        <p class="opacity-70 italic">Yazar adı ve biyografi, uzmanlık gerektiren sürdürülebilirlik konularında Google EEAT sinyallerini güçlendirir.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#0072bc]">AI Standartları</h4>
-                        <ul class="space-y-2 italic opacity-70">
+        <section id="ai" class="floating-card bg-white border-t-8 border-[#0072bc] shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h3 class="text-3xl font-extrabold mb-8 flex items-center gap-4 italic"><i class="fas fa-robot text-[#0072bc]"></i> AI Görünürlüğü & EEAT</h3>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed italic">ChatGPT, Gemini ve Perplexity gibi sistemler cevap üretirken web içeriklerini tarar ve özetler.</p>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="space-y-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-[#0072bc] uppercase text-xs tracking-widest italic">AI Odaklı İçerik</h4>
+                        <ul class="text-xs space-y-2 opacity-70 italic">
                             <li>İlk 2 paragrafta net tanım</li>
                             <li>Soru-cevap blokları</li>
                             <li>Doğrulanabilir anlatım</li>
                         </ul>
                     </div>
+                    <div class="space-y-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-[#0072bc] uppercase text-xs tracking-widest italic italic italic">EEAT (Güven)</h4>
+                        <p class="text-xs opacity-70 italic">Yazar adı ve biyografi, uzmanlık gerektiren sürdürülebilirlik konularında inandırıcılığı artırır.</p>
+                    </div>
                 </div>
             </div>
+            <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-blue-50 rounded-full opacity-50"></div>
         </section>
 
     </main>
 
     <script>
         // Navigasyon Aktifliği
-        const links = document.querySelectorAll('.nav-link');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                links.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
+        const sections = document.querySelectorAll('section, h2, div');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
             });
         });
     </script>
