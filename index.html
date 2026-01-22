@@ -10,7 +10,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #f3f7fa; scroll-behavior: smooth; }
         
-        /* Sol Menü Sabitleme */
         @media (min-width: 1024px) {
             .sidebar { position: fixed; height: 100vh; width: 320px; z-index: 40; }
             .content { margin-left: 320px; }
@@ -20,7 +19,6 @@
         .nav-link:hover { background-color: #f8fafc; color: #0072bc; }
         .nav-link.active { background-color: #e0f2fe; color: #0072bc; font-weight: 700; box-shadow: 0 4px 12px rgba(0, 114, 188, 0.08); }
         
-        /* Floating Card Yapısı */
         .floating-card { 
             background: white; 
             border-radius: 28px; 
@@ -37,7 +35,7 @@
 <body class="text-slate-800">
 
     <aside class="sidebar bg-white border-r border-slate-200 flex flex-col shadow-sm">
-        <div class="p-8 border-b border-slate-50 text-center lg:text-left">
+        <div class="p-8 border-b border-slate-50">
             <h1 class="text-xl font-black text-slate-900 leading-tight">UN Global Compact<br><span class="text-[#0072bc] uppercase text-2xl italic tracking-tighter">Türkiye</span></h1>
         </div>
 
@@ -52,7 +50,7 @@
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 block px-2">İçerik Mimarisi</span>
                 <a href="#ozgunluk" class="nav-link"><i class="fas fa-shield-check mr-3"></i> Özgünlük</a>
                 <a href="#analiz" class="nav-link"><i class="fas fa-magnifying-glass mr-3"></i> Kelime Analizi</a>
-                <a href="#hiyerarsi" class="nav-link"><i class="fas fa-sitemap mr-3"></i> Heading Hiyerarşisi</a>
+                <a href="#hiyerarsi" class="nav-link"><i class="fas fa-sitemap mr-3"></i> Heading Tag Hiyerarşisi</a>
             </div>
 
             <div>
@@ -62,36 +60,32 @@
             </div>
         </nav>
 
-        <div class="p-8 border-t border-slate-50 text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-relaxed italic">
-            Yazarlar İçin Taslak <br> <span class="text-slate-800">Digital Strategy 2026</span>
+        <div class="p-8 border-t border-slate-50 text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">
+            Yazarlar İçin Taslak <br> <span class="text-slate-800 text-xs">Digital Strategy 2026</span>
         </div>
     </aside>
 
     <main class="content p-6 lg:p-20 max-w-5xl">
         
-        <div class="floating-card accent-border bg-white italic text-2xl text-slate-600 leading-relaxed">
-            "Amacı anahtar kelime doldurmak değil; doğru kişiye, doğru sorunun cevabını, doğru yapı ve doğru bağlam ile sunabilmektir."
-        </div>
-
         <section id="tanim" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight italic border-b pb-4">SEO Uyumlu İçerik Nedir?</h2>
-            <div class="space-y-6 text-xl text-slate-600">
-                <p>Belirli anahtar kelimeler etrafında şekillenen, ancak yalnızca arama motorlarını değil öncelikle kullanıcıyı merkeze alan içerik türüdür.</p>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 tracking-tight italic border-b pb-4 uppercase underline decoration-[#0072bc] decoration-4 underline-offset-8">SEO Uyumlu İçerik Nedir?</h2>
+            <div class="space-y-6 text-xl text-slate-600 italic">
+                <p>Belirli anahtar kelimeler etrafında şekillenen, ancak yalnızca arama motorlarını değil öncelikle kullanıcıyı merkeze alan, okuyucuya gerçek değer sunan içerik türüdür.</p>
                 <div class="grid md:grid-cols-2 gap-6 mt-8">
-                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
-                        <h4 class="font-bold text-[#0072bc] text-sm uppercase mb-3 italic">Doğru Kitle</h4>
+                    <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 italic">
+                        <h4 class="font-bold text-[#0072bc] text-sm uppercase mb-3">Doğru Kitle</h4>
                         <p class="text-sm">İş dünyası, sürdürülebilirlik profesyonelleri, akademi ve STK ekosistemi.</p>
                     </div>
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
-                        <h4 class="font-bold text-slate-700 text-sm uppercase mb-3 italic">Odak Alanlar</h4>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 italic">
+                        <h4 class="font-bold text-slate-700 text-sm uppercase mb-3">Odak Alanlar</h4>
                         <p class="text-sm">İnsan hakları, iklim krizi, kurumsal sorumluluk ve çalışma standartları.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="bilesenler" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 italic">Temel Bileşenler</h2>
+        <section id="bilesenler" class="floating-card accent-border">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 italic uppercase underline decoration-[#0072bc] decoration-4 underline-offset-8">Temel Bileşenler</h2>
             <div class="grid md:grid-cols-2 gap-10">
                 <ul class="space-y-4 text-lg font-medium italic">
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-[#0072bc]"></i> Anahtar kelime stratejisi</li>
@@ -106,42 +100,42 @@
             </div>
         </section>
 
-        <section id="analiz" class="floating-card">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-10 italic">Anahtar Kelime ve Başlık Stratejisi</h2>
+        <section id="analiz" class="floating-card italic">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-10 uppercase underline decoration-[#0072bc] decoration-4 underline-offset-8">Anahtar Kelime ve Başlık Stratejisi</h2>
             <div class="space-y-8">
                 <div class="bg-slate-50 p-8 rounded-3xl opacity-60 border-2 border-dashed border-slate-200">
-                    <span class="text-xs font-bold text-red-400 uppercase block mb-2 italic">Zayıf Örnek</span>
-                    <p class="text-xl font-medium">“Sürdürülebilir Kalkınma Amaçları Hakkında Bilgiler”</p>
+                    <span class="text-xs font-bold text-red-400 uppercase block mb-2">Zayıf Örnek</span>
+                    <p class="text-xl font-medium italic">“Sürdürülebilir Kalkınma Amaçları Hakkında Bilgiler”</p>
                 </div>
                 <div class="bg-blue-50 p-8 rounded-3xl border-2 border-[#0072bc] shadow-md">
-                    <span class="text-xs font-bold text-[#0072bc] uppercase block mb-2 italic">Güçlü SEO Başlığı</span>
+                    <span class="text-xs font-bold text-[#0072bc] uppercase block mb-2">Güçlü SEO Başlığı</span>
                     <p class="text-2xl font-black text-slate-900 leading-tight italic">“Sürdürülebilir Kalkınma Amaçları (SKA) Nedir? Şirketler İçin Uygulama Rehberi”</p>
                 </div>
                 <div class="pt-6">
-                    <h4 class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4 italic italic">Hedeflenen Kelime Örnekleri:</h4>
+                    <h4 class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Örnek Hedef Kelimeler:</h4>
                     <div class="flex flex-wrap gap-2 text-xs font-bold italic">
-                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg">sürdürülebilir kalkınma hedefleri</span>
-                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg">bm sürdürülebilir kalkınma amaçları</span>
-                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg">çevresel sürdürülebilirlik</span>
-                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg">17 sürdürülebilir kalkınma hedefi</span>
+                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg italic">sürdürülebilir kalkınma hedefleri</span>
+                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg italic">bm sürdürülebilir kalkınma amaçları</span>
+                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg italic">çevresel sürdürülebilirlik</span>
+                        <span class="bg-slate-100 text-slate-600 px-3 py-2 rounded-lg italic">17 sürdürülebilir kalkınma hedefi</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="hiyerarsi" class="floating-card bg-[#0b0e14] text-slate-200 shadow-2xl overflow-hidden relative">
-            <h2 class="text-3xl font-extrabold text-white mb-10 italic">Hiyerarşi Taslağı (H1-H2-H3)</h2>
-            <div class="font-mono text-base md:text-lg leading-loose border-l border-slate-700 pl-8 space-y-6">
+            <h2 class="text-3xl font-extrabold text-white mb-10 italic uppercase underline decoration-[#0072bc] decoration-4 underline-offset-8 italic">Heading Tag Hiyerarşisi</h2>
+            <div class="font-mono text-base md:text-lg leading-loose border-l border-slate-700 pl-8 space-y-6 italic">
                 <div class="flex items-center gap-4">
                     <span class="h-tag-badge">H1</span> 
-                    <span class="text-white font-bold">Sürdürülebilir Kalkınma Amaçları Nedir?</span>
+                    <span class="text-white font-bold italic underline decoration-[#0072bc]">Sürdürülebilir Kalkınma Amaçları Nedir?</span>
                 </div>
                 <div class="ml-8 space-y-6 border-l border-slate-800 pl-8">
                     <div class="flex items-center gap-4">
-                        <span class="h-tag-badge bg-slate-600">H2</span> 
-                        <span class="text-blue-400 font-bold italic">SKA Neyi Kapsar?</span>
+                        <span class="h-tag-badge bg-slate-600 italic">H2</span> 
+                        <span class="text-blue-400 font-bold italic underline decoration-slate-600">SKA Neyi Kapsar?</span>
                     </div>
-                    <div class="ml-12 space-y-4 opacity-70 italic text-sm">
+                    <div class="ml-12 space-y-4 opacity-70 italic text-sm italic">
                         <div class="flex items-center gap-4">
                             <span class="h-tag-badge bg-slate-800 opacity-60 italic text-xs">H3</span> 
                             <span>SKA'nın ortaya çıkış amacı</span>
@@ -151,30 +145,24 @@
                             <span>2030 Ajandası nedir?</span>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
-                        <span class="h-tag-badge bg-slate-600">H2</span> 
-                        <span class="text-blue-400 font-bold italic">İş Dünyası SKA’lara Nasıl Katkı Sağlayabilir?</span>
-                    </div>
                 </div>
             </div>
-            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 opacity-5 rounded-full -mr-16 -mt-16"></div>
+            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 opacity-5 rounded-full -mr-16 -mt-16 italic"></div>
         </section>
 
-        <section id="ai" class="floating-card accent-border bg-slate-50">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 italic flex items-center gap-4">
-                <i class="fas fa-robot text-[#0072bc]"></i> AI Görünürlüğü ve EEAT
-            </h2>
-            <div class="grid md:grid-cols-2 gap-10">
+        <section id="ai" class="floating-card bg-slate-50 italic">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-8 italic flex items-center gap-4 uppercase underline decoration-[#0072bc] decoration-4 underline-offset-8">AI Görünürlüğü ve EEAT</h2>
+            <div class="grid md:grid-cols-2 gap-10 italic">
                 <div class="space-y-4">
-                    <h4 class="font-bold text-[#0072bc] uppercase text-xs italic">AI Sistemleri Neden Blog Tarar?</h4>
-                    <p class="text-sm italic opacity-80 leading-relaxed text-slate-600">
-                        ChatGPT ve Gemini gibi sistemler cevap üretirken web içeriğini tarar, özetler ve kaynak karşılaştırması yapar. Net tanımlar (ilk 2 paragraf) AI'ın sizi referans almasını sağlar.
+                    <h4 class="font-bold text-[#0072bc] uppercase text-xs">AI Sistemleri ve Bloglar</h4>
+                    <p class="text-sm italic opacity-80 leading-relaxed text-slate-600 italic">
+                        ChatGPT ve Gemini gibi sistemler cevap üretirken web içeriğini tarar, özetler ve kaynak gösterir. Doğru yapılandırılmış rehber formatı AI cevaplarında referans alınma ihtimalini yükseltir.
                     </p>
                 </div>
-                <div id="eeat" class="space-y-4">
-                    <h4 class="font-bold text-[#0072bc] uppercase text-xs italic">EEAT (Uzmanlık ve Güven)</h4>
-                    <p class="text-sm italic opacity-80 leading-relaxed text-slate-600">
-                        Yazar adı ve biyografisi, sürdürülebilirlik gibi uzmanlık gerektiren konularda Google'ın EEAT sinyallerini güçlendirerek otorite algısını artırır.
+                <div id="eeat" class="space-y-4 italic">
+                    <h4 class="font-bold text-[#0072bc] uppercase text-xs italic">Yazar ve EEAT</h4>
+                    <p class="text-sm italic opacity-80 leading-relaxed text-slate-600 italic">
+                        Yazar bilgisi, sürdürülebilirlik gibi uzmanlık gerektiren konularda Google'ın EEAT sinyallerini güçlendirerek otorite algısını artırır.
                     </p>
                 </div>
             </div>
@@ -183,7 +171,6 @@
     </main>
 
     <script>
-        // Navigasyon Aktifliği
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
 
@@ -191,7 +178,6 @@
             let current = "";
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 if (pageYOffset >= (sectionTop - 250)) {
                     current = section.getAttribute('id');
                 }
