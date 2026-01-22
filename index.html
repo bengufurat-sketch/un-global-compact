@@ -3,130 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Rehberi | UN Global Compact Türkiye</title>
+    <title>SEO Yazım Rehberi | UN Global Compact Türkiye Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; color: #1f2937; }
-        .ungc-blue { background-color: #0072bc; }
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700&family=Inter:wght@400;600;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; scroll-behavior: smooth; }
+        .article-text { font-family: 'Merriweather', serif; line-height: 1.8; color: #374151; }
+        .bg-ungc { background-color: #0072bc; }
         .text-ungc { color: #0072bc; }
-        .card { background: white; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); padding: 2rem; margin-bottom: 2rem; }
-        .gradient-header { background: linear-gradient(135deg, #0072bc 0%, #002e5d 100%); }
-        .h-tag { background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-family: monospace; font-weight: bold; }
+        .sidebar-box { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
     </style>
 </head>
 <body>
 
-    <header class="gradient-header text-white py-16 px-6 shadow-xl">
-        <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-block bg-white text-blue-800 px-4 py-1 rounded-full text-sm font-bold mb-6">UN GLOBAL COMPACT TÜRKİYE</div>
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">SEO Uyumlu İçerik Yazım Rehberi</h1>
-            <p class="text-xl opacity-90 font-light">Yazarlar İçin Profesyonel Sunum ve Uygulama Taslağı</p>
-        </div>
-    </header>
-
-    <main class="max-w-5xl mx-auto py-12 px-6">
-
-        <section class="card border-l-8 border-blue-500">
-            <h2 class="text-2xl font-bold mb-4 flex items-center"><i class="fas fa-lightbulb text-yellow-500 mr-3"></i> 1. SEO Uyumlu İçerik Nedir?</h2>
-            <p class="text-lg leading-relaxed mb-4 text-gray-700">Markaların belirli anahtar kelimeler üzerinden, okuyucuya <strong>gerçek fayda sağlayan</strong>, bilgilendirici ve arama motorları tarafından kolayca anlaşılabilen içerikler üretmesidir.</p>
-            <div class="bg-blue-50 p-4 rounded-lg italic text-blue-900 border border-blue-100 font-medium text-center">
-                Temel Amaç: Google’da üst sıralarda yer almak ve siteye nitelikli organik trafik kazandırmak.
-            </div>
-        </section>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <div class="card border-t-8 border-blue-500">
-                <h2 class="text-xl font-bold mb-4">2. Temel Bileşenler</h2>
-                <ul class="space-y-2 text-gray-600">
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Anahtar Kelime Kullanımı</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Heading Tag Hiyerarşisi</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> İnternal Link Yapısı</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Görsel Optimizasyonu & Özgünlük</li>
-                </ul>
-            </div>
-            <div class="card border-t-8 border-red-500 bg-red-50">
-                <h2 class="text-xl font-bold mb-4 text-red-700">3. Özgünlük (Kritik Kural)</h2>
-                <p class="text-sm text-red-900">Kopya içerik <strong>Spam</strong> olarak algılanır, sıralama kaybına neden olur ve markanın güvenilirliğine zarar verir. Mutlaka özgün yorum eklenmelidir.</p>
+    <nav class="bg-white border-b border-gray-200 py-4 px-6 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-extrabold text-xl tracking-tighter text-ungc uppercase">UN Global Compact <span class="text-gray-800">Türkiye</span></span>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                <a href="#giris" class="hover:text-ungc">Başlangıç</a>
+                <a href="#hiyerarsi" class="hover:text-ungc">Hiyerarşi</a>
+                <a href="#kurallar" class="hover:text-ungc">Altın Kurallar</a>
             </div>
         </div>
+    </nav>
 
-        <section class="card border-l-8 border-purple-500">
-            <h2 class="text-2xl font-bold mb-6">4 & 5. Anahtar Kelime ve Başlık Stratejisi</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h4 class="font-bold text-gray-700 mb-2 underline text-sm uppercase">Örnek Kelimeler:</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-100 text-xs p-2 rounded border">sürdürülebilir kalkınma amaçları</span>
-                        <span class="bg-gray-100 text-xs p-2 rounded border">çevresel sürdürülebilirlik</span>
-                        <span class="bg-gray-100 text-xs p-2 rounded border">bm sk hedefleri</span>
+    <main class="max-w-6xl mx-auto mt-12 px-6">
+        <div class="flex flex-col lg:flex-row gap-12">
+            
+            <article class="lg:w-2/3">
+                <header class="mb-10" id="giris">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="bg-blue-100 text-ungc text-xs font-bold px-3 py-1 rounded-full uppercase">Yazar Rehberi</span>
+                        <span class="text-gray-400 text-xs italic">Güncelleme: 2026</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">SEO Uyumlu İçerik Yazım Rehberi</h1>
+                    <p class="text-xl text-gray-500 italic">Sürdürülebilirlik dünyasında doğru kitleye ulaşmanın dijital stratejisi.</p>
+                </header>
+
+                <div class="article-text text-lg">
+                    <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">1. SEO Uyumlu İçerik Nedir?</h2>
+                    <p class="mb-6">SEO uyumlu içerik; markaların belirli anahtar kelimeler üzerinden, okuyucuya <strong>gerçek fayda sağlayan</strong>, bilgilendirici ve arama motorları tarafından kolayca anlaşılabilen içerikler üretmesidir.</p>
+                    
+                    <p class="mb-6 font-semibold">UN Global Compact Türkiye için odak konular:</p>
+                    <ul class="list-none space-y-2 mb-8 bg-blue-50 p-6 rounded-xl border-l-4 border-ungc text-base">
+                        <li><i class="fas fa-leaf text-green-600 mr-2"></i> Sürdürülebilirlik</li>
+                        <li><i class="fas fa-users text-blue-600 mr-2"></i> İnsan hakları ve Çalışma standartları</li>
+                        <li><i class="fas fa-temperature-high text-red-600 mr-2"></i> İklim krizi</li>
+                        <li><i class="fas fa-briefcase text-gray-600 mr-2"></i> Kurumsal sorumluluk</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4" id="hiyerarsi">2. Başlık (Heading Tag) Hiyerarşisi</h2>
+                    <p class="mb-6">Uzun ve bölünmemiş metinler kullanıcıyı yorar. Arama motorları içeriği anlamlandırmak için başlık yapısına bakar.</p>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-inner">
+                        <p class="text-sm font-bold text-gray-400 mb-2 uppercase">Örnek Yapı:</p>
+                        <ul class="space-y-2 font-mono text-sm">
+                            <li class="text-blue-700 font-bold">H1: Sürdürülebilir Kalkınma Amaçları (SKA) Nedir?</li>
+                            <li class="ml-4 text-gray-700">H2: 17 Sürdürülebilir Kalkınma Amacı Nelerdir?</li>
+                            <li class="ml-8 text-gray-500">H3: Çevresel hedefler (İklim, su)</li>
+                            <li class="ml-8 text-gray-500">H3: Sosyal hedefler (Eğitim, eşitlik)</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">3. Görsel ve Linkleme</h2>
+                    <p class="mb-4">Görsellerin <strong>Alt Etiketi (alt text)</strong> mutlaka doldurulmalı ve dosya adları açıklayıcı olmalıdır (örn: <code>karbon-ayak-izi.png</code>).</p>
+                    <p class="mb-6 italic bg-yellow-50 p-4 border-l-4 border-yellow-400"><strong>İç Linkleme:</strong> Yazı içinden "10 İlke" veya "SKA" sayfalarına açıklayıcı metinlerle link verilmelidir.</p>
+                </div>
+            </article>
+
+            <aside class="lg:w-1/3">
+                <div class="sticky-sidebar">
+                    <div class="sidebar-box">
+                        <h3 class="font-bold text-gray-900 mb-4 border-b pb-2">Önemli Kontrol Listesi</h3>
+                        <ul class="text-sm space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Özgün içerik (Spam yapmayın)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Anahtar kelime analizi</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Bullet list kullanımı</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Mobil uyumlu görseller</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box bg-ungc text-white">
+                        <h3 class="font-bold mb-2">Doğru Başlık Örneği</h3>
+                        <p class="text-xs opacity-80 mb-3 underline">SKA İçeriği İçin:</p>
+                        <p class="text-sm font-semibold italic">"Sürdürülebilir Kalkınma Amaçları (SKA) Nedir? Şirketler İçin Uygulama Rehberi"</p>
                     </div>
                 </div>
-                <div>
-                    <h4 class="font-bold text-gray-700 mb-2 underline text-sm uppercase">Başlık Dönüşümü:</h4>
-                    <div class="text-xs text-red-500 mb-1">❌ İklim Krizi ve Günümüz</div>
-                    <div class="text-sm font-bold text-green-700">✅ İklim Krizi Şirketleri Nasıl Etkiliyor ve Riskler Nasıl Azaltılabilir?</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="card border-l-8 border-ungc">
-            <h2 class="text-2xl font-bold mb-4 italic">6. Heading Tag (H1-H2-H3) Hiyerarşisi</h2>
-            <p class="text-gray-600 mb-6 italic">Arama motorları içeriğin konusunu başlık yapısına bakarak anlamlandırır.</p>
-            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                <div class="mb-4"><span class="h-tag">H1</span> <span class="font-bold text-lg">Sürdürülebilir Kalkınma Amaçları (SKA) Nedir?</span></div>
-                <div class="ml-6 mb-4 border-l-2 border-blue-200 pl-4">
-                    <div class="mb-2"><span class="h-tag">H2</span> <span class="font-semibold text-blue-800">Sürdürülebilir Kalkınma Amaçları Neyi Kapsar?</span></div>
-                    <div class="ml-6 space-y-2">
-                        <div><span class="h-tag text-xs text-blue-500">H3</span> SKA’nın ortaya çıkış amacı</div>
-                        <div><span class="h-tag text-xs text-blue-500">H3</span> 2030 Ajandası nedir?</div>
-                    </div>
-                </div>
-                <div class="ml-6 border-l-2 border-blue-200 pl-4">
-                    <div class="mb-2"><span class="h-tag text-xs">H2</span> <span class="font-semibold text-blue-800">17 Sürdürülebilir Kalkınma Amacı Nelerdir?</span></div>
-                    <div class="ml-6 italic text-gray-500 text-sm">...sosyal, çevresel ve ekonomik hedefler</div>
-                </div>
-            </div>
-        </section>
-
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-            <div class="card p-6 shadow-sm border-b-4 border-blue-500">
-                <h3 class="font-bold mb-2"><i class="fas fa-image mr-2 text-blue-500"></i> Görsel</h3>
-                <p class="text-xs text-gray-500 italic">Dosya isimlerini açıklayıcı yapın ve mutlaka 'Alt Text' alanını doldurun.</p>
-            </div>
-            <div class="card p-6 shadow-sm border-b-4 border-blue-500">
-                <h3 class="font-bold mb-2"><i class="fas fa-link mr-2 text-blue-500"></i> Linkleme</h3>
-                <p class="text-xs text-gray-500 italic">"Buraya tıklayın" yerine "10 İlke" veya "İklim Değişikliği" metinlerinden link verin.</p>
-            </div>
-            <div class="card p-6 shadow-sm border-b-4 border-blue-500">
-                <h3 class="font-bold mb-2"><i class="fas fa-list-ul mr-2 text-blue-500"></i> Listeler</h3>
-                <p class="text-xs text-gray-500 italic">Bullet list kullanımı okunabilirliği ve 'Snippet' şansını artırır.</p>
-            </div>
+            </aside>
         </div>
-
-        <div class="ungc-blue text-white rounded-3xl p-10 text-center shadow-2xl">
-            <h2 class="text-3xl font-extrabold mb-8 uppercase tracking-widest">YAZARLAR İÇİN ALTIN KURALLAR</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="p-4 border border-blue-400 rounded-xl bg-blue-600 bg-opacity-30">
-                    <p class="text-xs font-bold">ÖZGÜN YAZ</p>
-                </div>
-                <div class="p-4 border border-blue-400 rounded-xl bg-blue-600 bg-opacity-30">
-                    <p class="text-xs font-bold">ANALİZ YAP</p>
-                </div>
-                <div class="p-4 border border-blue-400 rounded-xl bg-blue-600 bg-opacity-30">
-                    <p class="text-xs font-bold">HİYERARŞİ KUR</p>
-                </div>
-                <div class="p-4 border border-blue-400 rounded-xl bg-blue-600 bg-opacity-30">
-                    <p class="text-xs font-bold">FAYDA SAĞLA</p>
-                </div>
-            </div>
-        </div>
-
     </main>
 
-    <footer class="bg-gray-800 text-white py-12 text-center">
-        <p class="opacity-50 text-sm">© 2026 UN Global Compact Türkiye | SEO ve Dijital İçerik Rehberi</p>
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-20 text-center">
+        <p class="text-sm">© 2026 UN Global Compact Türkiye - SEO İçerik Stratejisi</p>
     </footer>
 
 </body>
